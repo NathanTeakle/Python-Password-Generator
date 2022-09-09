@@ -2,6 +2,10 @@ import string
 import random
 
 
+## Just a title for the Script
+print ("Python based Password Generator | Author, NTeakle 9/09/2022")
+
+
 ## Characters to generate password from
 alphabets = list(string.ascii_letters)
 digits = list(string.digits)
@@ -9,13 +13,16 @@ special_characters = list("!@#$%^&*()")
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 
 def generate_random_password():
-	## Choose the length of password 
+	## Sets the total length for the entire passsword, if you set it to 30, you will need to set alphabetical characters to 10,
+    	## digits to 10,
+   	## special characters to 10,
+    	## to generate a total length of 30
 	length = int(input("Enter password length: "))
 
 	## Specift the number of character types
-	alphabets_count = int(input("Enter alphabets count in password: "))
-	digits_count = int(input("Enter digits count in password: "))
-	special_characters_count = int(input("Enter special characters count in password: "))
+	alphabets_count = int(input("Enter alphabetical character count in password: "))
+	digits_count = int(input("Enter digit count in password: "))
+	special_characters_count = int(input("Enter special character count in password: "))
 
 	characters_count = alphabets_count + digits_count + special_characters_count
 
